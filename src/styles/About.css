@@ -1,0 +1,230 @@
+.section {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, #a7c7e7, #6a8bce);
+  padding: 50px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 30px;
+  text-align: center;
+  max-width: 1200px;
+  margin-top: 100px;
+}
+
+.welcome-section h3 {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.welcome-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.welcome-container img {
+  width: 300px;
+  max-width: 45%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.welcome-text h4 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.welcome-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: black;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.welcome-container img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text h4 {
+  transition: color 0.3s ease;
+}
+
+.welcome-text h4:hover {
+  color: #0d47a1;
+}
+
+.quiz-difficulty {
+  background: linear-gradient(135deg, #a7c7e7, #6a8bce);
+  padding: 50px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+}
+
+.quiz-difficulty h3 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.difficulty-levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.difficulty-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.difficulty-card img {
+  width: 100px; 
+  height: 100px; 
+  margin-bottom: 15px;
+  object-position: center;
+}
+
+.difficulty-card h4 {
+  font-size: 1.5rem;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+.difficulty-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  text-align: justify;
+}
+
+.quiz-categories {
+  background: linear-gradient(135deg, #a7c7e7, #6a8bce);
+  padding: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+}
+
+.quiz-categories h3 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Quatre cartes par ligne */
+  gap: 10px; /* Marge de 10px */
+  justify-items: center;
+}
+
+.category-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 7px;
+  padding-bottom: 0px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+  max-height: 250px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.category-card h4 {
+  font-size: 1.4rem;
+  color: #1e40af;
+  margin-bottom: 5px;
+}
+
+.category-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.features {
+  background: linear-gradient(135deg, #a2c2e6, #4e73df);
+  padding: 50px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px;
+}
+
+.features h3 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card img {
+  margin-bottom: 15px;
+}
+
+.feature-card h4 {
+  font-size: 1.5rem;
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
