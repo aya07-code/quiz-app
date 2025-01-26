@@ -26,7 +26,7 @@ function App() {
   }, [theme]);
 
   return (
-    <Router>
+    <Router basename="/quiz-app">
       <div className={`App ${theme}`}>
         <div className="theme-toggle">
           <label>
