@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Header />
-      <section className="hero" style={{ backgroundImage: `url('/images/background_quiz2.jpg')` }}>
+      <section className="hero" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/images/background_quiz2.jpg)`}}>
         <div className="titre">
           <h1>Think Fast</h1>
           <h1>Think Fast</h1>

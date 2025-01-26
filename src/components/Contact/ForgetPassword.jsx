@@ -15,7 +15,7 @@ const ForgetPassword = () => {
           <div className="ForgetPassword">
             <div class="container">
               <h2>Forget Password</h2>
-              <img className='img' src="images/logo-transparence-sans-logo1.png" alt="logo" />
+              <img className='img' src={`${process.env.PUBLIC_URL}/images/logo-transparence-sans-logo1.png`}  alt="logo" />
             </div>
             <div className="input">
               <i className="fas fa-user"></i>

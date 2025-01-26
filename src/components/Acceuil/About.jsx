@@ -37,7 +37,7 @@ const About = () => {
       >
         <motion.h3 variants={fadeInUp}>Bienvenue sur Think Faster</motion.h3>
         <motion.div className="welcome-container" variants={fadeInUp}>
-          <img src="images/welcome.png" alt="Image de bienvenue" />
+          <img src={`${process.env.PUBLIC_URL}/images/welcome.png`} alt="Image de bienvenue" />
           <div className="welcome-text">
             <h4>ThinkFaster</h4>
             <p>
@@ -58,17 +58,17 @@ const About = () => {
         <motion.div className="difficulty-levels" variants={staggerChildren}>
           {[
             {
-              img: "images/easy2-.jpg",
+              img: `${process.env.PUBLIC_URL}/images/easy2-.jpg`,
               title: "Niveau A : Facile",
               description: "Le niveau A est conçu pour ceux qui débutent leur parcours de quiz. Ce niveau vous aide à prendre confiance et à vous familiariser avec le format des quiz.",
             },
             {
-              img: "images/medium2 (3)-.jpg",
+              img: `${process.env.PUBLIC_URL}/images/medium2 (3)-.jpg`,
               title: "Niveau B : Moyen",
               description: "Le niveau B augmente la difficulté avec des questions plus complexes et nécessite une compréhension approfondie des sujets.",
             },
             {
-              img: "images/hard2-.jpg",
+              img: `${process.env.PUBLIC_URL}/images/hard2-.jpg`,
               title: "Niveau C : Difficile",
               description: "Le niveau C est destiné aux experts en quiz et à ceux qui sont prêts à repousser les limites de leurs connaissances. Ce niveau est fait pour ceux qui aiment la compétition.",
             },
@@ -92,14 +92,14 @@ const About = () => {
         <motion.h3 variants={fadeInUp}>Catégories de quiz</motion.h3>
         <motion.div className="categories-grid" variants={staggerChildren}>
           {[
-            { img: "images/chefcuis.jpg", title: "Cuisine", description: "Questions sur les plats, les recettes et les cultures culinaires." },
-            { img: "images/voyage.jpg", title: "Voyages", description: "Découvrez des cultures et des destinations à travers le monde." },
-            { img: "images/sports.jpg", title: "Sports", description: "Testez vos connaissances sur les sports et les grands événements sportifs." },
-            { img: "images/programme.jpg", title: "Développement", description: "Explorez le monde du codage et des technologies.", onClick: handleDevelopmentClick },
-            { img: "images/films.jpg", title: "Cinéma", description: "Plongez dans l'univers du cinéma avec des questions sur les films cultes." },
-            { img: "images/langues.jpg", title: "Langues", description: "Apprenez tout en jouant avec des quiz sur les langues et les expressions." },
-            { img: "images/santes.jpg", title: "Santé", description: "Quiz sur le bien-être, la santé et les modes de vie sains." },
-            { img: "images/art.jpg", title: "Arts", description: "Découvrez des questions captivantes sur la peinture, la musique et l'histoire de l'art." },
+            { img: `${process.env.PUBLIC_URL}/images/chefcuis.jpg`, title: "Cuisine", description: "Questions sur les plats, les recettes et les cultures culinaires." },
+            { img: `${process.env.PUBLIC_URL}/images/voyage.jpg`, title: "Voyages", description: "Découvrez des cultures et des destinations à travers le monde." },
+            { img: `${process.env.PUBLIC_URL}/images/sports.jpg`, title: "Sports", description: "Testez vos connaissances sur les sports et les grands événements sportifs." },
+            { img: `${process.env.PUBLIC_URL}/images/programme.jpg`, title: "Développement", description: "Explorez le monde du codage et des technologies.", onClick: handleDevelopmentClick },
+            { img: `${process.env.PUBLIC_URL}/images/films.jpg`, title: "Cinéma", description: "Plongez dans l'univers du cinéma avec des questions sur les films cultes." },
+            { img: `${process.env.PUBLIC_URL}/images/langues.jpg`, title: "Langues", description: "Apprenez tout en jouant avec des quiz sur les langues et les expressions." },
+            { img: `${process.env.PUBLIC_URL}/images/santes.jpg`, title: "Santé", description: "Quiz sur le bien-être, la santé et les modes de vie sains." },
+            { img: `${process.env.PUBLIC_URL}/images/art.jpg`, title: "Arts", description: "Découvrez des questions captivantes sur la peinture, la musique et l'histoire de l'art." },
           ].map((item, index) => (
             <motion.div
               key={index}

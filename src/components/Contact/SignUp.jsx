@@ -15,7 +15,7 @@ const SignUp = () => {
             <div className="signUp">
               <div class="container">
                 <h2>Sign Up</h2>
-                <img className='img' src="images/logo-transparence-sans-logo1.png" alt="logo" />
+                <img className='img' src={`${process.env.PUBLIC_URL}/images/logo-transparence-sans-logo1.png`} alt="logo" />
               </div>
               <div className="input">
                 <i className="fas fa-user"></i>

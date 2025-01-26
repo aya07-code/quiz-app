@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header>
-      <img src="images/logo_transparence1.png" alt="Quiz Logo" />
+      <img src={`${process.env.PUBLIC_URL}/images/logo_transparence1.png`} alt="Quiz Logo" />
       <nav>
         <Link to="/" className="nav-a">Home</Link>
         <Link to="/about" className="nav-a">About</Link>

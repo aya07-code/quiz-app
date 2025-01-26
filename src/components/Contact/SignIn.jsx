@@ -29,7 +29,7 @@ const SignIn = () => {
           <div className="signIn">
             <div className="container">
               <h2>Sign In</h2>
-              <img className="img" src="images/logo-transparence-sans-logo1.png" alt="logo" />
+              <img className="img" src={`${process.env.PUBLIC_URL}/images/logo-transparence-sans-logo1.png`} alt="logo" />
             </div>
             {error && <p className="error">{error}</p>}
             <div className="input">
