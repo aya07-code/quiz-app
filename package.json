@@ -2,7 +2,7 @@
   "name": "quiz-test",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://aya-ziad.github.io/think-fast",
+  "homepage": "https://aya-ziad.github.io/quiz-app/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@reduxjs/toolkit": "^2.5.1",
