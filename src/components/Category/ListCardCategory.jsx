@@ -1,12 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import CardCategory from './CardCategory';
+import Footer from '../Layouts/Footer';
 
 const ListCardCategory = () => {
+  const navigate = useNavigate();
+
   const categories = [
     {
       title: 'Développement',
       imgSrc: '/images/programme.jpg',
-      description: 'Testez vos compétences en programmation, technologies web, applications et tout ce qui touche au développement logiciel.'
+      description: 'Testez vos compétences en programmation, technologies web, applications et tout ce qui touche au développement logiciel.',
+      onClick: () => navigate('/quiz') 
     },
     {
       title: 'Arts',
@@ -46,16 +51,20 @@ const ListCardCategory = () => {
   ];
 
   return (
-    <div className="row d-flex justify-content-center"  style={{ padding: '20px' }}>
-      {categories.map((category, index) => (
-        <CardCategory
-          key={index}
-          title={category.title}
-          imgSrc={category.imgSrc}
-          description={category.description}
-        />
-      ))}
-    </div>
+    <>
+      <div className="row d-flex justify-content-center mt-5 " style={{ padding: '20px' }}>
+        {categories.map((category, index) => (
+          <CardCategory
+            key={index}
+            title={category.title}
+            imgSrc={category.imgSrc}
+            description={category.description}
+            onClick={category.onClick} 
+          />
+        ))}
+      </div>
+      <Footer />
+    </>
   );
 };
 

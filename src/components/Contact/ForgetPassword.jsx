@@ -25,10 +25,10 @@ const ForgetPassword = () => {
               <input type="submit" value="Send Reset Link" id="btn" />
             </div>
             <div className="pss">
-              <p>I remember my password? <Link to="/SignUp" className="link">Sign Up</Link></p>
+              <p>I remember my password? <Link to="/SignIn" className="link">Sign In</Link></p>
             </div>
             <div className="pss" id='w2'>
-              <p>New account? <Link to="/SignIn" className="link">Sign In</Link></p>
+              <p>New account? <Link to="/SignUp" className="link">Sign Up</Link></p>
             </div>
           </div>
       </div>

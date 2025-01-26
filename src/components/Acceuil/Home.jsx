@@ -2,6 +2,7 @@ import React from 'react';
 import '../../styles/Home.css';
 import Header from '../Layouts/Header';
 import Footer from '../Layouts/Footer';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -12,7 +13,10 @@ const Home = () => {
           <h1>Think Fast</h1>
           <h1>Think Fast</h1>
         </div>
-        <h2>Sharpen Your Mind</h2>
+        <h2>Aiguisez votre esprit</h2>
+        <Link to="/listcardcategory" className="start-quiz-link">
+          Commencer le quiz <span className="arrow">→</span>
+        </Link>
       </section>
       <Footer />
     </>
